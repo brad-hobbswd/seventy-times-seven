@@ -25,22 +25,6 @@ body {
     padding-top: 10px;
 }
 
-header {
-    text-align: center;
-    padding: 70px 20px 30px;
-}
-
-header h1 {
-    font-size: 42px;
-    color: var(--gold);
-    letter-spacing: 2px;
-}
-
-header h2 {
-    font-size: 18px;
-    color: var(--text-muted);
-}
-
 .topnav {
     position: sticky;
     top: 0;
@@ -64,6 +48,33 @@ header h2 {
 .topnav a:hover {
     background: rgba(255,255,255,0.1);
     color: #ffffff;
+}
+
+.banner {
+    width: 100%;
+}
+
+.banner img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+}
+
+header {
+    text-align: center;
+    padding: 50px 20px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: var(--gold);
+    letter-spacing: 2px;
+}
+
+header h2 {
+    font-size: 18px;
+    color: var(--text-muted);
 }
 
 .container {
@@ -121,6 +132,10 @@ footer {
     <a href="chapter10.html">10</a>
     <a href="about.html">About</a>
 </nav>
+
+<div class="banner">
+    <img src="banner.jpg" alt="Seven Times Seventy Banner">
+</div>
 
 <header>
     <h1>Seven Times Seventy</h1>
