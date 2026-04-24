@@ -22,6 +22,7 @@ body {
     font-family: Georgia, "Times New Roman", serif;
     background: linear-gradient(to bottom, #0f1720, #1c2530);
     color: var(--text-light);
+    padding-top: 10px;
 }
 
 header {
@@ -43,22 +44,25 @@ header h2 {
 .topnav {
     position: sticky;
     top: 0;
-    background: rgba(15, 23, 32, 0.95);
-    padding: 10px;
+    background: rgba(15, 23, 32, 0.98);
+    padding: 12px 10px;
     text-align: center;
+    z-index: 9999;
     border-bottom: 1px solid rgba(255,255,255,0.1);
-    z-index: 1000;
 }
 
 .topnav a {
-    margin: 6px;
-    padding: 8px 14px;
+    display: inline-block;
+    margin: 5px;
+    padding: 8px 12px;
     text-decoration: none;
     color: var(--gold-soft);
     font-size: 14px;
+    border-radius: 6px;
 }
 
 .topnav a:hover {
+    background: rgba(255,255,255,0.1);
     color: #ffffff;
 }
 
@@ -122,15 +126,25 @@ footer {
 
 <body>
 
+<nav class="topnav">
+    <a href="index.html">Preface</a>
+    <a href="chapter1.html">1</a>
+    <a href="chapter2.html">2</a>
+    <a href="chapter3.html">3</a>
+    <a href="chapter4.html">4</a>
+    <a href="chapter5.html">5</a>
+    <a href="chapter6.html">6</a>
+    <a href="chapter7.html">7</a>
+    <a href="chapter8.html">8</a>
+    <a href="chapter9.html">9</a>
+    <a href="chapter10.html">10</a>
+    <a href="about.html">About</a>
+</nav>
+
 <header>
     <h1>Chapter 3</h1>
     <h2>Forgiveness as Spiritual Authority</h2>
 </header>
-
-<nav>
-    <a href="chapter2.html">Previous Chapter</a>
-    <a href="chapter4.html">Next Chapter</a>
-</nav>
 
 <div class="container">
     <div class="content">
@@ -150,6 +164,11 @@ footer {
         <p>Many experience physical sensations at this point. A release in the chest. Tears without clear explanation. A sudden calm. These are signs of spiritual movement.</p>
 
         <p>Forgiveness invites the Spirit of Jesus directly into the wound. And where His Spirit is present, healing follows.</p>
+
+        <div class="chapter-nav">
+            <a href="chapter2.html">← Previous</a>
+            <a href="chapter4.html">Next →</a>
+        </div>
 
     </div>
 </div>
