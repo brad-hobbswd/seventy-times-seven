@@ -23,6 +23,7 @@ body {
     background: linear-gradient(to bottom, #0f1720, #1c2530);
     color: var(--text-light);
     padding-top: 10px;
+    overflow-x: hidden;
 }
 
 .topnav {
@@ -63,26 +64,17 @@ body {
     height: auto;
     display: block;
     margin: auto;
-
     border-radius: 16px;
-
     box-shadow:
         0 0 40px rgba(212,175,55,0.25),
         0 20px 60px rgba(0,0,0,0.7);
-}
-
-@media (max-width: 768px) {
-    .banner img {
-        max-width: 100%;
-        max-height: none;
-        border-radius: 10px;
-    }
 }
 
 .container {
     max-width: 900px;
     margin: auto;
     padding: 40px 20px;
+    box-sizing: border-box;
 }
 
 .content {
@@ -90,6 +82,7 @@ body {
     padding: 45px;
     border-radius: 14px;
     box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    box-sizing: border-box;
 }
 
 .content h1 {
@@ -112,6 +105,28 @@ footer {
     margin: 50px 0 20px;
     color: #888;
     font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .content {
+        padding: 25px 18px;
+    }
+
+    .container {
+        padding: 25px 12px;
+    }
+
+    .banner img {
+        max-width: 100%;
+        max-height: none;
+        border-radius: 10px;
+    }
+
+    .topnav a {
+        padding: 6px 8px;
+        font-size: 13px;
+    }
 }
 
 </style>
